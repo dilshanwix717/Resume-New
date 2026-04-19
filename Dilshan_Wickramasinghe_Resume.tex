@@ -1,0 +1,193 @@
+%-------------------------
+% 1-page Resume — Dilshan Wickramasinghe
+% Condensed version of the full CV. For a longer, more detailed version,
+% see Dilshan_Wickramasinghe_CV.tex (2 pages).
+% Template based on: https://github.com/sb2nov/resume  (MIT)
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT----------
+\usepackage[T1]{fontenc}
+\usepackage[default]{sourcesanspro}
+
+\linespread{1.04}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins — slightly wider horizontal, tighter vertical
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.85in}
+\addtolength{\textheight}{1.7in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{1pt}\raggedright\large\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-3pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-1pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{1pt}\item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \bfseries Dilshan Wickramasinghe} \\ \vspace{2pt}
+    \small Matara, Sri Lanka \\ \vspace{2pt}
+    \small \raisebox{-0.1\height}\faPhone\ +94 77 10 22 972 \quad
+    \href{mailto:dilshanmw717@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{dilshanmw717@gmail.com}} \quad
+    \href{https://linkedin.com/in/dilshanwix717}{\raisebox{-0.2\height}\faLinkedin\ \underline{LinkedIn}} \quad
+    \href{https://github.com/dilshanwix717}{\raisebox{-0.2\height}\faGithub\ \underline{GitHub}} \quad
+    \href{https://dilshan-dev.vercel.app/}{\raisebox{-0.2\height}\faGlobe\ \underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------PROFILE-----------
+\section{Profile}
+\small{Full-stack engineer with 2 years of experience developing production web applications, streaming platforms, and real-time web games at CeylonX and D B International Technology. Work spans \textbf{NestJS} and \textbf{Node.js} backend services, \textbf{React} and \textbf{Next.js} frontends, and \textbf{Cocos Creator} game clients, backed by \textbf{PostgreSQL}, \textbf{MySQL}, and \textbf{MongoDB} on \textbf{AWS}.}
+\vspace{-4pt}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Ruhuna}{2020 -- Dec. 2025}
+      {Bachelor of Computer Science}{Matara, Sri Lanka}
+    \resumeSubheading
+      {Rahula College Matara}{}{GCE Advanced Level -- Mathematics: A $|$ Physics: C $|$ Chemistry: C}{Matara, Sri Lanka}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {D B International Technology}{Apr. 2025 -- Present}
+      {Associate Software Engineer}{Sri Lanka}
+      \resumeItemListStart
+        \resumeItem{Contributed to the \textbf{Digital Scratch Card} ticket game --- built a ticket-generation engine with weight-table validation producing exact winning and losing distributions to protect RTP; extended into a batch pipeline that generated \textasciitilde{}130M tickets into \textbf{PostgreSQL}. \emph{NestJS, TypeORM, Cocos Creator.}}
+        \resumeItem{Contributed to a \textbf{Gaming Platform} with a micro-service backend --- API gateway fronting account and lobby services over \textbf{RabbitMQ}, deployed on \textbf{Kubernetes}; worked on auth proxying, lobby routing, and edge rate-limiting.}
+        \resumeItem{Contributed to \textbf{Chicken Road Crash}, a real-time multiplier crash game --- built the \textbf{Cocos Creator} game client using a Finite State Machine (FSM) architecture; the \textbf{NestJS} backend broadcast round state over \textbf{Socket.IO} with \textbf{RabbitMQ} for event fan-out.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {CeylonX Corporation}{Dec. 2024 -- Mar. 2025}
+      {Associate Software Engineer}{Sri Lanka}
+      \resumeItemListStart
+        \resumeItem{Contributed to \textbf{Susila}, a Sri Lankan subscription streaming platform with a \textbf{React} client and \textbf{Node.js} API; delivered video over \textbf{HLS (m3u8)} with \textbf{Vimeo} as origin, integrated \textbf{Stripe} for subscriptions and \textbf{Firebase Cloud Messaging} for push.}
+        \resumeItem{Contributed to the \textbf{CeylonX corporate website and admin portal} --- a \textbf{React}/\textbf{Three.js} frontend with a \textbf{Node.js}/\textbf{Express} and \textbf{MongoDB} API, \textbf{TinyMCE} admin for non-technical editors; deployed on \textbf{AWS} with GitHub-triggered CI/CD.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {CeylonX Corporation}{Jun. 2024 -- Dec. 2024}
+      {Intern Software Engineer}{Sri Lanka}
+      \resumeItemListStart
+        \resumeItem{Contributed to \textbf{Rainbow Swimming Club's online-payment app} --- a \textbf{React} + \textbf{MUI} client with a \textbf{Node.js}/\textbf{Express} and \textbf{MySQL} backend; implemented the full \textbf{PayHere} MD5-signed redirect and notify-webhook flow with signature verification, idempotent lookups, and printable receipts.}
+        \resumeItem{Contributed features and maintenance to a production \textbf{restaurant POS system} running at Iluk Restaurant \& Bar and Savour Street --- worked across the \textbf{React} frontend and \textbf{Node.js} backend APIs. Promoted to Associate after 6 months.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-4pt}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{NestJS Microservices: API Gateway + Auth + User} $|$ \emph{NestJS, TypeScript, RabbitMQ, PostgreSQL, Redis}}{}
+      \resumeItemListStart
+        \resumeItem{Self-initiated 3-service streaming-platform backbone over RabbitMQ with dead-letter queues, idempotency, and domain-event fan-out; gateway with per-service circuit breakers, Redis caching, Prometheus metrics, and Jaeger tracing.}
+        \resumeItem{RS256 JWT (15-min access + 7-day opaque refresh), Argon2id hashing, device-fingerprinted session-reuse detection, per-endpoint rate limits, account lockout.}
+        \resumeItem{\faGithub\ \href{https://github.com/dilshanwix717/API-Gateway-NestJS}{\underline{API Gateway}} $|$ \href{https://github.com/dilshanwix717/Auth-Service-NestJS}{\underline{Auth Service}} $|$ \href{https://github.com/dilshanwix717/User-Service-NestJS}{\underline{User Service}}}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-4pt}
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: TypeScript, JavaScript} \\
+     \textbf{Frameworks \& Libraries}{: React.js, Next.js, Node.js, NestJS, Cocos Creator} \\
+     \textbf{Databases}{: PostgreSQL, MongoDB, MySQL, Firebase} \\
+     \textbf{Infrastructure \& Cloud}{: AWS, Docker, CI/CD (GitHub Actions), RabbitMQ, Redis, Linux, macOS, Windows} \\
+     \textbf{Tools}{: Figma, Postman, Trello} \\
+     \textbf{Working Knowledge}{: Java, C\#, C, PHP, Spring Boot, ASP.NET Core, Laravel, Kubernetes, Kafka, MS SQL, Unity, Godot, Networking} \\
+    }}
+ \end{itemize}
+ \vspace{-4pt}
+
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{AWS Educate -- Introduction to Cloud} $|$ \emph{Amazon Web Services} $|$ \href{https://www.credly.com/badges/228aaed7-0f46-4d78-97ab-9dab3ec99dfa/public\_url}{\underline{View on Credly}}}{}
+    \resumeSubHeadingListEnd
+
+\end{document}
