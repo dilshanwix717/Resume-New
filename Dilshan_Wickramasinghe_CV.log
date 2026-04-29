@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Homebrew) (preloaded format=pdflatex 2026.3.4)  19 APR 2026 16:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Homebrew) (preloaded format=pdflatex 2026.3.4)  28 APR 2026 20:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -600,13 +600,13 @@ Package rerunfilecheck Info: File `Dilshan_Wickramasinghe_CV.out' has not change
 Here is how much of TeX's memory you used:
  15070 strings out of 467525
  265024 string characters out of 5408440
- 689187 words of memory out of 5000000
+ 690187 words of memory out of 5000000
  43784 multiletter control sequences out of 15000+600000
  724009 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,670b,710s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,670b,708s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb></opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Bold.pfb></opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-BoldIt.pfb></opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-It.pfb></opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Regular.pfb></opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
-Output written on Dilshan_Wickramasinghe_CV.pdf (2 pages, 270384 bytes).
+Output written on Dilshan_Wickramasinghe_CV.pdf (2 pages, 271070 bytes).
 PDF statistics:
  107 PDF objects out of 1000 (max. 8388607)
  85 compressed objects within 1 object stream

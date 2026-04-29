@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1776594742.49388 "/Users/dilshan/Projects/Latex/cv/Dilshan_Wickramasinghe_CV.tex" "Dilshan_Wickramasinghe_CV.pdf" "Dilshan_Wickramasinghe_CV" 1776594743.51471 0
-  "/Users/dilshan/Projects/Latex/cv/Dilshan_Wickramasinghe_CV.tex" 1776594742.08661 14029 8a5a2dbdf975bfcb5bba771ddbfe8ad8 ""
+["pdflatex"] 1777387682.84904 "/Users/dilshan/Projects/Latex/cv/Dilshan_Wickramasinghe_CV.tex" "Dilshan_Wickramasinghe_CV.pdf" "Dilshan_Wickramasinghe_CV" 1777387683.86146 0
+  "/Users/dilshan/Projects/Latex/cv/Dilshan_Wickramasinghe_CV.tex" 1777387682.57722 14342 aa669c5caa8a16cbac9aecfe73a2f102 ""
   "/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1772380719 2920 d63721872b8c77041b88e51b8f7c291d ""
   "/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1772380719 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
   "/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc" 1772380719 2906 e48aa7c95dea478a2e011bcb4f7878c9 ""
@@ -113,9 +113,9 @@
   "/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1772380719 5006 d7e899bb5d9717c7f214e9bc0284de7b ""
   "/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/web2c/texmf.cnf" 1772380719 43633 14bbc273cebd985e64ab1a698333eaf9 ""
   "/opt/homebrew/Cellar/texlive/20260301/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1772380719 3636956 5168b884cb430e6a6336cfea08fa659a ""
-  "Dilshan_Wickramasinghe_CV.aux" 1776594743.35588 1052 207009d747f45657f8244ad005d60f71 "pdflatex"
-  "Dilshan_Wickramasinghe_CV.out" 1776594743.35677 776 5217dcdf498a9922d916205be7eecaf0 "pdflatex"
-  "Dilshan_Wickramasinghe_CV.tex" 1776594742.08661 14029 8a5a2dbdf975bfcb5bba771ddbfe8ad8 ""
+  "Dilshan_Wickramasinghe_CV.aux" 1777387683.69886 1052 207009d747f45657f8244ad005d60f71 "pdflatex"
+  "Dilshan_Wickramasinghe_CV.out" 1777387683.70127 776 5217dcdf498a9922d916205be7eecaf0 "pdflatex"
+  "Dilshan_Wickramasinghe_CV.tex" 1777387682.57722 14342 aa669c5caa8a16cbac9aecfe73a2f102 ""
   (generated)
   "Dilshan_Wickramasinghe_CV.aux"
   "Dilshan_Wickramasinghe_CV.log"
