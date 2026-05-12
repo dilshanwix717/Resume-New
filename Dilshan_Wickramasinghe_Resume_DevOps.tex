@@ -1,0 +1,194 @@
+%-------------------------
+% 1-page Resume — Dilshan Wickramasinghe (DevOps focus)
+% DevOps-oriented variant of the standard resume. Reframes existing
+% software-engineering experience around infrastructure, deployment,
+% CI/CD, containers, and observability.
+% Template based on: https://github.com/sb2nov/resume  (MIT)
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT----------
+\usepackage[T1]{fontenc}
+\usepackage[default]{sourcesanspro}
+
+\linespread{1.04}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.85in}
+\addtolength{\textheight}{1.7in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{1pt}\raggedright\large\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-3pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-1pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{1pt}\item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \bfseries Dilshan Wickramasinghe} \\ \vspace{2pt}
+    \small Matara, Sri Lanka \\ \vspace{2pt}
+    \small \raisebox{-0.1\height}\faPhone\ +94 77 10 22 972 \quad
+    \href{mailto:dilshanmw717@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{dilshanmw717@gmail.com}} \quad
+    \href{https://linkedin.com/in/dilshanwix717}{\raisebox{-0.2\height}\faLinkedin\ \underline{LinkedIn}} \quad
+    \href{https://github.com/dilshanwix717}{\raisebox{-0.2\height}\faGithub\ \underline{GitHub}} \quad
+    \href{https://dilshan-dev.vercel.app/}{\raisebox{-0.2\height}\faGlobe\ \underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------PROFILE-----------
+\section{Profile}
+\small{Software engineer with 2 years shipping and operating production microservices on \textbf{Kubernetes} and \textbf{AWS}. Hands-on across the delivery pipeline --- \textbf{Docker}, \textbf{GitHub Actions} CI/CD, \textbf{RabbitMQ}, \textbf{Redis}, and observability with \textbf{Prometheus} and \textbf{Jaeger}. Looking to move into a DevOps / Platform Engineering role to own infrastructure and reliability end-to-end.}
+\vspace{-4pt}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Ruhuna}{2020 -- Dec. 2025}
+      {Bachelor of Computer Science}{Matara, Sri Lanka}
+    \resumeSubheading
+      {Rahula College Matara}{}{GCE Advanced Level -- Mathematics: A $|$ Physics: C $|$ Chemistry: C}{Matara, Sri Lanka}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {D B International Technology}{Apr. 2025 -- Present}
+      {Associate Software Engineer}{Sri Lanka}
+      \resumeItemListStart
+        \resumeItem{Helped operate a \textbf{Gaming Platform} micro-service backend on \textbf{Kubernetes} --- API gateway fronting account and lobby services over \textbf{RabbitMQ}; containerized services with \textbf{Docker} and contributed to deployment configs, auth proxying, and edge rate-limiting.}
+        \resumeItem{Built a \textbf{batch ingestion pipeline} for the \textbf{Digital Scratch Card} game that generated \textasciitilde{}\textbf{130M} tickets into \textbf{PostgreSQL} with weight-table validation and automatic regeneration on integrity failure --- tuned for throughput and data correctness.}
+        \resumeItem{Operated a real-time \textbf{Socket.IO} broadcast service (Chicken Road Crash) with \textbf{RabbitMQ} event fan-out for round-state distribution to many concurrent clients.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {CeylonX Corporation}{Dec. 2024 -- Mar. 2025}
+      {Associate Software Engineer}{Sri Lanka}
+      \resumeItemListStart
+        \resumeItem{Owned end-to-end \textbf{AWS} deployments with \textbf{GitHub Actions} CI/CD triggered on push --- managed pre-prod to prod rollouts, environment configuration, and secrets across multiple services.}
+        \resumeItem{Operated streaming infrastructure for \textbf{Susila} (subscription VOD) --- delivered video over \textbf{HLS (m3u8)} with \textbf{Vimeo} as origin for concurrent viewers; integrated \textbf{Stripe} webhooks and \textbf{Firebase Cloud Messaging}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {CeylonX Corporation}{Jun. 2024 -- Dec. 2024}
+      {Intern Software Engineer}{Sri Lanka}
+      \resumeItemListStart
+        \resumeItem{Implemented the \textbf{PayHere} MD5-signed redirect + server-to-server notify-webhook flow with signature verification and \textbf{idempotent} success lookups for safe payment retries.}
+        \resumeItem{Maintained a production \textbf{restaurant POS} running at multiple sites --- monitored uptime, debugged production issues, and shipped fixes; promoted to Associate after 6 months.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-4pt}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{NestJS Microservices Platform: Gateway + Auth + User} $|$ \emph{Docker, RabbitMQ, PostgreSQL, Redis, Prometheus, Jaeger}}{}
+      \resumeItemListStart
+        \resumeItem{Self-initiated 3-service backbone --- containerized with \textbf{Docker Compose}, communicating over \textbf{RabbitMQ} with \textbf{dead-letter queues}, idempotency keys, per-service \textbf{circuit breakers}, retries, and \textbf{Redis} caching.}
+        \resumeItem{Observability: \textbf{Prometheus} metrics and \textbf{Jaeger} distributed tracing across services for end-to-end request visibility.}
+        \resumeItem{\faGithub\ \href{https://github.com/dilshanwix717/API-Gateway-NestJS}{\underline{API Gateway}} $|$ \href{https://github.com/dilshanwix717/Auth-Service-NestJS}{\underline{Auth Service}} $|$ \href{https://github.com/dilshanwix717/User-Service-NestJS}{\underline{User Service}}}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-4pt}
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Cloud \& Infrastructure}{: AWS (EC2, S3, IAM), Linux (Ubuntu), Networking fundamentals} \\
+     \textbf{Containers \& CI/CD}{: Docker, Docker Compose, Kubernetes, GitHub Actions, Bash, Git} \\
+     \textbf{Messaging, Caching \& Observability}{: RabbitMQ, Redis, Socket.IO, Prometheus, Jaeger} \\
+     \textbf{Databases}{: PostgreSQL, MySQL, MongoDB, Firebase} \\
+     \textbf{Languages \& Stack}{: TypeScript, JavaScript, Bash; Node.js, NestJS, Express, React, Next.js} \\
+     \textbf{Working Knowledge}{: Kafka, Java, C\#, Python, PHP, Spring Boot, ASP.NET Core} \\
+    }}
+ \end{itemize}
+ \vspace{-4pt}
+
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{AWS Educate -- Introduction to Cloud} $|$ \emph{Amazon Web Services} $|$ \href{https://www.credly.com/badges/228aaed7-0f46-4d78-97ab-9dab3ec99dfa/public\_url}{\underline{View on Credly}}}{}
+    \resumeSubHeadingListEnd
+
+\end{document}
